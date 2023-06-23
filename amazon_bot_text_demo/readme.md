@@ -64,7 +64,9 @@ This is the configuration file for us to choose the model for messages and the t
 >test.py
 
 This is a test file for us to input our question into thie file. 
+
 In line 9, there is a place where you should copy your own secret api key to the place between the quotes.
+
 In line 15, there is a line:
 ```
 question="Can i use this air fryer in England?"
