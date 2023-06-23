@@ -3,7 +3,7 @@ import os
 from pydantic import BaseSettings
 
 # Set the environment variable for the OpenAI API key
-os.environ['openai_key'] = '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'
+os.environ['openai_key'] = 'your own secret key'
 
 # Retrieve the API key
 API_KEY = os.environ.get('Openai_key')
