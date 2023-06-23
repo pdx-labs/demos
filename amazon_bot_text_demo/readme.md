@@ -25,6 +25,10 @@ If the version is below 3.9, please upgrade python following this websites instr
 Please feel free to create a new fork for this library and clone it down to your own local environment.
 Here is [github documentation](https://docs.github.com/en/get-started/quickstart/fork-a-repo) on creating new forks and downloading repo.
 
+>Get your own OpenAI key
+
+Click [here](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) to create your secret api key.
+
 ## Compilation
 
 When you download the library in the local environment (such as VSCode), create a new terminal and make sure you are in pdx library.
@@ -59,7 +63,9 @@ This is the configuration file for us to choose the model for messages and the t
 
 >test.py
 
-This is a test file for us to input our question into thie file. In line 15, there is a line:
+This is a test file for us to input our question into thie file. 
+In line 9, there is a place where you should copy your own secret api key to the place between the quotes.
+In line 15, there is a line:
 ```
 question="Can i use this air fryer in England?"
 ```
