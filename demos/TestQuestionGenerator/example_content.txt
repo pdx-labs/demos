@@ -1,0 +1,71 @@
+MOSFET functions:
+
+A metal–oxide–semiconductor field-effect transistor (MOSFET, MOS-FET, or MOS FET) is a
+field-effect transistor (FET with an insulated gate) where the voltage determines the conductivity
+of the device. It is used for amplifying or switching electronic signals. MOSFETs are now
+widely used in digital and analog circuits. 
+
+MOS represents three layers of the
+M: first electrode- Gate: Consists of low-
+resistivity material such as metal or
+polycrystalline silicon
+O: Dielectric-Silicon dioxide: stable
+high-quality electrical insulator between
+gate and substrate.
+S: second electrode- Substrate or Body:
+n- or p-type semiconductor
+
+MOS operation can be understood by a parallel plate capacitor with metal electrodes and a
+dielectric material in between.
+When a voltage −𝑽 is applied between the
+plates, charges −𝑸 and +𝑸 appear on the
+plates. This results in an electric field
+between the plates.
+The ideal energy-band diagram of the MOS
+capacitor with a p-type substrate under a
+zero bias as shown in Figure. The energy
+bands in the semiconductor are flat
+indicating there is no net charges including
+interface exists in the semiconductor.
+
+With a negative gate bias with respect to the semiconductor substrate, the holes in the
+semiconductor will be attracted to the interface between semiconductor and oxide, forming an
+accumulative layer. This bias bends the energy band upwards and results in the valence-band
+edge being closer to Fermi level at the oxide-semiconductor interface than in the bulk material,
+which implies that there is an accumulation of holes.
+
+With a positive gate bias with respect to the
+semiconductor substrate, the holes in the
+semiconductor will be expelled away from the
+interface between semiconductor and oxide,
+forming a depletion layer. This bias bends the
+energy band downwards and results in the
+intrinsic Fermi level being closer to Fermi level
+at the oxide-semiconductor interface than in the
+bulk material, which implies that there is a
+space charge region formed.
+
+With a larger positive gate bias with respect to the semiconductor substrate, the bias bends the
+energy band downwards even further and results in the intrinsic Fermi level being below the
+Fermi level at the oxide-semiconductor interface than in the bulk material, which implies that
+there is an inversion layer of free electrons formed.
+
+The basic MOSFET operation:
+MOSFETs are four terminal devices with a Gate, Drain, Source, and Bulk as shown in
+Figure. The current in a MOSFET is due to the flow of charges in the inversion layer (n-
+channel) between Drain and Source.
+There are 4 basic MOSFET device types. Both the p-channel and the n-channel MOSFETs are
+available in two basic forms, the Enhancement mode and the Depletion mode.
+Enhancement mode – the transistor requires a Gate-Source voltage, (𝑉𝐺𝑆) greater than
+the threshold voltage (𝑉𝑡ℎ) level to switch the device “ON”. The enhancement mode
+MOSFET is equivalent to a “Normally Open” switch.
+Depletion mode – the transistor requires the Gate-Source voltage, (𝑉𝐺𝑆) to switch the
+device “OFF”. The depletion mode MOSFET is equivalent to a “Normally Closed” switch.
+In this class, we will focus on the n-channel enhancement MOS transistors.
+
+
+
+
+
+
+
