@@ -95,8 +95,12 @@ variable could possibly look like.
 file_path = 'YOUR_PATH\\pdx\\Vivian_demos\\demos\\TestQuestionGenerator\\example_content.txt'
 ```
 ## Run Demo
-Once you have selected your desired topic and inputed the correct file path to the content
-you want to base your questions off of, you can use the following command to run the script:
+Before running the demo, you need to open up a terminal and set your api key, where you plan to run your script.
+Use the following command in your terminal with your own API key:
+```
+set API_KEY=<Enter your API Key without the triangular brackets>
+```
+Once you have selected your desired topic and set your API key, you can use the following command to run the script:
 
 NOTE: Make sure that you are in the tests folder when running the command.
 ```
