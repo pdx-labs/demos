@@ -1,6 +1,6 @@
 # Youtube Video Title and Script Generator
 
-This demo uses the pdx library to generate generate a youtube video title and script based on the topic you input.
+This demo uses the pdx library to generate a youtube video title and script based on the topic you input.
 
 ## Installation
 Before installing the pdx library, ensure that you are using the latest version of python (3.11.4).
