@@ -35,15 +35,15 @@ When you download the library in the local environment (such as VSCode), create 
 
 Then type code below to change the directory in to tests folder.
 ```python
-cd demos/amazon_bot_text_demo/tests
+cd demos/amazon_bot_text_demo
 ```
 To double check, you can also type
 ```python
 ls
 ```
-and the expected output is 
+and the expected output contains
 ```python
-test.py
+agent.py                air_fryer_photo.png     config.yaml             readme.md               templates               tests
 ```
 Yayy, you are on the right spot!
 
@@ -61,17 +61,37 @@ This is a template file to provide template for the output. When we choose to in
 
 This is the configuration file for us to choose the model for messages and the template for output. We choose to use devanci-003 since we are using text demo. More complicated configuration will be shown in chat agent and advanced agent.
 
->test.py
+> test_1.yaml
+
+This is the test in the local to see if the agent is running as expected.
+
+>agent.py
 
 This is a test file for us to input our question into thie file. 
 
-In line 9, there is a place where you should copy your own secret api key to the place between the quotes.
+In line 10, there is a place where you should change the folder path to your amazon_bot_text_demo path on local.
 
-In line 15, there is a line:
+In line 14, there is a line:
 ```
 question="Can i use this air fryer in England?"
 ```
-We can change this line to change the question and the program will provide us different outputs based on the input.
+We can change this line to change the question and the program will provide us different outputs based on the input and implement in the applications.
+
+## Testing
+
+We use test_1.yaml file to run test in local environment to make sure it works in local environment
+
+If you are running Mac OS/ linux, type below in your terminal:
+```
+export OPENAI_API_KEY="your secret key"
+```
+For more information, please see [this page](https://www.immersivelimit.com/tutorials/adding-your-openai-api-key-to-system-environment-variables)
+
+Next,type below in the terminal:
+```
+pdx test /CHANGE THIS TO YOUR PATH/amazon_bot_text_demo --debug
+```
+Now you will see in your terminal,test_1 is running!
 
 ## Coding Samples
 
@@ -79,14 +99,22 @@ How can we run the code?
 
 First, make sure that you are in the test directory.
 
-Second, type the following in your local terminal:
+Second, type in your API key in terminal. 
+
+If you are running Mac OS/ linux, type below in your terminal:
+```
+export OPENAI_API_KEY="your secret key"
+```
+For more information, please see [this page](https://www.immersivelimit.com/tutorials/adding-your-openai-api-key-to-system-environment-variables)
+
+Third, type the following in your local terminal:
 
 ```
-python test.py
+python agent.py
 ```
 If you are in Mac and the above code report error, please try 
 ```
-python3 test.py
+python3 agent.py
 ```
 And wait for 30 seconds, you should have your output in your terminal!
 
@@ -111,7 +139,9 @@ Can i use this air fryer in England?
 ```
 This output is exactly what I want, if we read the default.yaml carefully, then we will notice that the top review mentions that this air fryer cannot be used in England base on voltage difference.
 
-Feel free to change line 15 in test.py to try out more questions!
+Feel free to change line 14 in test.py to try out more questions!
+
+
 
 ## Contributing
 
