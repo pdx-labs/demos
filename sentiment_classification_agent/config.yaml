@@ -1,0 +1,9 @@
+# PDX AGENT CONFIG
+---
+name: sentiment_classification_agent
+comment: An agent that classifies the sentiment of a sentence as
+    positive or negative.
+model:
+    id: text-davinci-003
+prompt:
+    - template: 1_prompt.jinja
