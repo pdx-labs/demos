@@ -1,0 +1,10 @@
+%YAML 1.2
+---
+name: text_agent_demo_Annabelle
+comment: An agent to test text completions
+model:
+    id: text-davinci-003
+    #id: gpt-3.5-turbo
+    # id: claude-v1
+prompt:
+    - template: air_fryer_prompt.jinja
