@@ -8,7 +8,7 @@ api_key = os.environ.get('OPENAI_KEY')
 api_keys = Keys(openai_key=api_key, anthropic_key=None, cohere_key=None)
 
 # Instantiate the agent
-my_agent = Agent(folder_path="c:\\Users\\User\\Demos\\YoutubeVideo_Title_Script_Generator", api_keys=api_keys)
+my_agent = Agent(folder_path="c:\\Users\\User\\demos\\YoutubeVideo_Title_Script_Generator", api_keys=api_keys)
 
 #User input: user can enter in any topic they want to generate a youtube title and script about that topic
 topic = 'Deep Learning'
