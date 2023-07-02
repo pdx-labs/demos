@@ -1,0 +1,10 @@
+%YAML 1.2
+---
+name: Test Question Generator
+comment: An agent to give sample test questions based on the topic and context of interest
+model:
+    id: text-davinci-003
+    # id: gpt-3.5-turbo
+    # id: claude-v1
+prompt:
+    - template: test_prompt.jinja

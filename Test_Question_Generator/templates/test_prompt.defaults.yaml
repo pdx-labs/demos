@@ -1,0 +1,24 @@
+%YAML 1.2
+---
+topic: Semiconductors
+content: "Photovoltaic cells convert sunlight into electricity
+A photovoltaic (PV) cell, commonly called a solar cell, is a nonmechanical device that converts sunlight directly into electricity. Some PV cells can convert artificial light into electricity.
+Sunlight is composed of photons, or particles of solar energy. These photons contain varying amounts of energy that correspond to the different wavelengths of the solar spectrum.
+A PV cell is made of semiconductor material. When photons strike a PV cell, they may reflect off the cell, pass through the cell, or be absorbed by the semiconductor material. Only the absorbed photons provide energy to generate electricity. 
+When the semiconductor material absorbs enough sunlight (solar energy), electrons are dislodged from the material's atoms. Special treatment of the material surface during manufacturing makes the front surface 
+of the cell more receptive to the dislodged, or free, electrons so that the electrons naturally migrate to the surface of the cell.
+The flow of electricity in a solar cell
+The movement of electrons, each carrying a negative charge, toward the front surface of the solar photovoltaic cell creates an imbalance of
+electrical charge between the cell's front and back surfaces. This imbalance, in turn, creates a voltage potential like the negative and positive terminals of a battery.
+Electrical conductors on the cell absorb the electrons. When the conductors are connected in an electrical circuit to an external load, such as a battery, electricity flows through the circuit.
+Photovoltaic cells, panels, and arrays
+The PV cell is the basic building block of a PV system. Individual cells can vary from 0.5 inches to about 4.0 inches across. However, one cell only produces 1 or 2 Watts, which is only enough electricity for small uses, such as powering calculators or wristwatches.
+PV cells are electrically connected in a packaged, weather-tight PV panel (sometimes called a module). PV panels vary in size and in the amount of electricity they can produce. PV panel electricity-generating capacity 
+increases with the number of cells in the panel or in the surface area of the panel. PV panels can be connected in groups
+ to form a PV array. A PV array can be composed of as little as two to hundreds of PV panels. The number of PV panels connected in a PV array determines the amount of electricity the array can generate.
+Photovoltaic cells generate direct current (DC) electricity. DC electricity can be used to charge batteries that power devices that use direct current electricity. 
+Nearly all electricity is supplied as alternating current (AC) in electricity transmission and distribution systems. Devices called inverters are used on PV panels or in arrays to convert the DC electricity to AC electricity.
+PV cells and panels will produce the most electricity when they are directly facing the sun. PV panels and arrays can use tracking systems that keep the panels facing the sun, but these systems are expensive. 
+Most PV systems have panels in a fixed position that are usually facing directly south in the northern hemisphere—directly north in the southern hemisphere—and at an angle that optimizes the physical and economic performance of the system."
+
+link: https://www.eia.gov/energyexplained/solar/photovoltaics-and-electricity.php#:~:text=A%20photovoltaic%20(PV)%20cell%2C,or%20particles%20of%20solar%20energy.
