@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-test_prompt:
+prompt:
   topic: Stem Cells
   content: "What are stem cells? Stem cells as the body's master cells. Stem cells: The body's master cells. Stem cells are the body's raw materials — cells from which all other cells with specialized functions are generated. Under the right conditions in the body or a laboratory, stem cells divide to form more cells called daughter cells.
 These daughter cells become either new stem cells or specialized cells (differentiation) with a more specific function, such as blood cells, brain cells, heart muscle cells or bone cells. No other cell in the body has the natural ability to generate new cell types.

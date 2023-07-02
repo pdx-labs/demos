@@ -7,4 +7,4 @@ model:
     # id: gpt-3.5-turbo
     # id: claude-v1
 prompt:
-    - template: test_prompt.jinja
+    - template: prompt.jinja
