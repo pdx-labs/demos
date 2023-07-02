@@ -26,7 +26,7 @@ Click [here](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secr
 
 ## Compilation
 
-Make sure have all the code necessary for this demo (for isntance by downloading it).
+Make sure have all the code necessary for this demo (for instance by downloading it).
 
 To double check the files:
 
