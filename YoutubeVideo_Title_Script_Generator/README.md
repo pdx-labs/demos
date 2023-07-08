@@ -27,21 +27,21 @@ cd pdx
 pip install pdx
 pip install .
 ```
-Once you have installed the library in your local environment, clone this repository to your
+Once you have installed the library in your local environment, clone this forked repository to your
 local environment. 
 
 Windows: Use the following command to clone the repository:
 ```bash
-git clone https://github.com/pdx-labs/demos.git
+git clone https://github.com/vxw8/Vivian_demos.git
 ```
-After cloning the repository, add this folder "demos" containing the demos to the pdx library folder
+After cloning the repository, add this folder "Vivian_demos" containing the demos to the pdx library folder
 
 ## Compilation
 Open a new terminal and open the pdx library. Once you are in the library, go to the following folder
 to run the demo:
 
 ```bash
-cd YoutubeVideo_Title_Script_Generator
+cd Vivian_demos\YoutubeVideo_Title_Script_Generator
 ```
 To check that the folder contains the script, you can run the following command
 ```bash
@@ -54,7 +54,7 @@ open the agent.py file and edit the folder path in line 11 to be your path to th
 Code should look something like this:
 
 ```
-my_agent = Agent(folder_path="C:\\Users\\User\\demos\\YoutubeVideo_Title_Script_Generator"
+my_agent = Agent(folder_path="C:\\Users\\User\\Vivian_demos\\YoutubeVideo_Title_Script_Generator"
                  , api_keys=api_keys)
 ```
 
