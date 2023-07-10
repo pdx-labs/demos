@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+name: Travel_Agent_Bot
+comment: An agent that makes travel destination recommendations based on a city
+model:
+    # id: text-davinci-003
+    id: gpt-3.5-turbo
+    # id: claude-v1
+prompt:
+    - system: 0_system.jinja
+    - user: 1_user.jinja
+    - assistant: 1_assistant.jinja
+    - user: 2_user.jinja
