@@ -3,105 +3,91 @@
 This demo uses the pdx library to generate a youtube video title and script based on the topic you input.
 
 ## Installation
-Before installing the pdx library, ensure that you are using the latest version of python (3.11.4).
-> Python Upgrade/Installation
+### Install PDX
 
-Check the python version using the following command:
+In your local Python environment, install `pdx`:
+
 ```bash
-python3 --version
-```
-The preferable version of python is:
-``` Python 3.11.4
-```
-Install the latest version of python from the following link if you have not done so using the
-following link: https://www.python.org/downloads/
-
-> Install pdx library and dependencies
-
-Clone the repository containing the pdx library from the following link: https://github.com/pdx-labs/pdx
-
-Windows: Use the following commands to clone and install the pdx library and dependencies:
-```bash
-git clone https://github.com/pdx-labs/pdx.git
-cd pdx
 pip install pdx
-pip install .
-```
-Once you have installed the library in your local environment, clone this forked repository to your
-local environment. 
+``
+More information about [PDX here](https://pdxlabs.io/docs/getting-started/introduction).
 
-Windows: Use the following command to clone the repository:
-```bash
-git clone https://github.com/vxw8/Vivian_demos.git
-```
-After cloning the repository, add this folder "Vivian_demos" containing the demos to the pdx library folder
+### Get the demo
+
+Please feel free to clone this repository of demos to your own local environment.
+
+> Get your own OpenAI key
+
+Click [here](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) to create your secret api key.
 
 ## Compilation
-Open a new terminal and open the pdx library. Once you are in the library, go to the following folder
-to run the demo:
+Make sure have all the code necessary for this demo (for instance by downloading it).
 
-```bash
-cd Vivian_demos\YoutubeVideo_Title_Script_Generator
-```
-To check that the folder contains the script, you can run the following command
+To double check the files:
 ```bash
 dir
 ```
-The expected output should show that agent.py is one of the existing files in the directory
-
-You will also need to set the file path of the agent in the agent.py file. To do this,
-open the agent.py file and edit the folder path in line 11 to be your path to the directory.
-Code should look something like this:
-
-```
-my_agent = Agent(folder_path="C:\\Users\\User\\Vivian_demos\\YoutubeVideo_Title_Script_Generator"
-                 , api_keys=api_keys)
-```
+The expected output should show that agent.py file is one of the existing files in the directory.
 
 ## Content Information
-> config.yaml:
->> The configuration file contains information about the model to execute the prompts and the
->> templates used to create the output. For this specific demo, gpt-3.5-turbo will be used, which is an
->> OpenAI chat model. The template that will be used to format the title and script prompt will be title_template.jinja and script_template.jinja.
-
-> agent.py:
->> This is the python script file that procesess the inputs made by the user and outputs the Youtube title and script generated
-based on the user's inputed topic. The user will need to input their desired topic into line 14 of this script using the following code:
+### `run.py` 
+This is the python file that procesess the inputs made by the user and outputs the Youtube title and script generated
+based on the user's inputed topic. Two agents are imported into this python file, the title generator agent and the script generator agent. The user only needs to input their desired topic into line 16 of this file using the following code:
 ```
-topic = 'YOUR_TOPIC'
+_topic = 'YOUR_TOPIC'
 ```
+The title and script of the Youtube video will be generated automatically.
 
-> Templates
->> title_template.defaults.yaml:
+### Title_Agent Folder
+
+### `config.yaml`
+This configuration file provides configuration information of the agent that generates the title of a youtube video based on the topic that the user inputs. The information contained in this file include the name of the agent, the actions made by the agent, the model of the LLM used by the agent, and the prompt templates being used. For this specific demo, gpt-3.5-turbo will be used, which is an OpenAI chat model. The title_template.jinja will be the prompt used by this agent.
+
+### `__init__.py`
+This python file creates the agent being used to generate the youtube video title with the topic input made by user. The agent folder path is also defined in this file. This is the first agent that will be used in the run.py file. It will create the input passed into the second agent that writes the script for the youtube video.
+
+### Script_Agent Folder
+
+### `config.yaml`
+This configuration file provides configuration information about the agent that generates a youtube video script based on the title that was generated by the title_agent. The information contained in this file include the name of the agent, the actions made by the agent, the model of the LLM used by the agent, and the prompt templates being used. For this specific demo, gpt-3.5-turbo will be used, which is an OpenAI chat model. The script_template.jinja will be the prompt used by this agent.
+
+### `__init__.py`
+This python file creates the agent being used to generate the youtube video script based on the output from the title agent. The agent folder path is also defined in this file. This is the second agent that will be used in the run.py file.
+
+### Templates
+
+`**title_template.defaults.yaml**`
 This YAML file contains the default inputs for the title prompt template. The topic input is set default to "Artificial Intelligence"
 
->> scipt_template.defaults.yaml:
->> This YAML file contains the default inputs for the script prompt template. The title input is set default to
->> "Understanding the Fundamentals of Artificial Intelligence".
-
->> title_template.jinja:
+`**title_template.jinja**`
 This jinja file contains the prompt template used to guide the model about creating a youtube video title based on the
->> topic chosen by the user.
+topic chosen by the user.
 
->> script_template.jinja:
+`**script_template.defaults.yaml**`
+This YAML file contains the default inputs for the script prompt template. The title input is set default to
+"Understanding the Fundamentals of Artificial Intelligence".
+
+`**script_template.jinja**`
 This jinja file takes in the title created by the model automatically and writes a youtube video script based on
->> the outputed title. Therefore, all the user needs to do is enter the main topic of the youtube video.
+the outputed title. Therefore, all the user needs to do is enter the main topic of the youtube video.
 
-> tests
->> test.yaml:
-This is a YAML test file with already set user inputs and used for testing/debugging prompt templates for demo.
+## Testing
+`**test.yaml**`
+This is a YAML test file with already set user inputs and used for testing and debugging prompt templates for demo.
 
 ## Run Demo
 Before running the demo, you need to open up a terminal and set your api key, where you plan to run your script.
-Use the following command in your terminal with your own API key:
+The following command is for Windows operating system to set up the api key in your terminal:
 ```
 set OPENAI_KEY=<Enter your API Key without the triangular brackets>
 ```
-Once you have selected your desired topic and set your API key, you can use the following command to run the script:
+NOTE: Use the command that corresponds to your operating system to set up your api key.
 
-NOTE: Make sure that you are in the same directory as the agent.py file when running the command.
+Once you have selected your desired topic and set your API key, use the following command to run the script:
+
+NOTE: Make sure that you are in the same directory as the run.py file when running the command.
 ```
-python agent.py
+python run.py
 ```
 Example Output (User input: Neural Networks):
 
