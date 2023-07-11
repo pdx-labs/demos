@@ -1,0 +1,28 @@
+Given the following computer needs for a {{job}}: 
+
+{{information}}
+
+Provide one computer recommendation for this {{job}}.
+
+Answer the question below in JSON format. 
+Question: What makes this computer best for this job?
+
+The JSON format must contain the answer to the question in text and also provide a list of 
+computer specifications that supports the answer to the question. Additioanlly, provide a maximum of 5 human reviews
+about this specific computer that support the answer.
+
+The format for the JSON must be as follows:
+
+{
+    "Computer Recommendation": "The name of the computer best suited for this job",
+    "Computer Specifications": [
+        "Computer Specification 1",
+        "Computer Specification 2",
+        "Computer Specification 3"
+    ]
+    "reviews": [
+        "review 1",
+        "review 2",
+        "review 3"
+    ]
+}
