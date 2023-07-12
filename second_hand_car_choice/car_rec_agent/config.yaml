@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+name: second_hand_car_rec_demo
+comment: An agent to provide car model recommendation based on driver's age, preference, budget and other factors.
+model:
+    # id: text-davinci-003
+    id: gpt-3.5-turbo
+    # id: claude-v1
+prompt:
+    - system: 0_system.jinja
+    - user: 1_user.jinja
+    - assistant: 1_assistant.jinja
+    - user: 2_user.jinja
