@@ -171,7 +171,7 @@ export OPENAI_KEY="your secret key"
 Next,type below in the terminal:
 
 ```
-pdx test <RELATIVE PATH TO YOUR AGENT> --debug
+pdx test <RELATIVE PATH TO YOUR AGENT> --verbose
 ```
 
 Now you will see in your terminal,test_1 is running!

@@ -7,10 +7,9 @@ if __name__ == '__main__':
     _response_rec = insurance_agent.execute({
         '1_prompt': {'question': _question}
     })
-    print(_response_rec.completion)
+    print(_response_rec.data)
 
     _response_insurance = car_rec_agent.execute({
-        '2_user': {'question': _response_rec.completion}
+        '2_user': {'question': _response_rec.data}
     })
-    print(_response_insurance.completion)
-
+    print(_response_insurance.data)

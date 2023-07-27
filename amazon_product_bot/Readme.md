@@ -89,7 +89,7 @@ export OPENAI_KEY="your secret key"
 Next,type below in the terminal:
 
 ```
-pdx test /CHANGE THIS TO YOUR PATH/amazon_product_bot --debug
+pdx test /CHANGE THIS TO YOUR PATH/amazon_product_bot --verbose
 ```
 
 Now you will see in your terminal,test_1 is running!
