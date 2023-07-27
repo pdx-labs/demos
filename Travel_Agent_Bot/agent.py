@@ -1,13 +1,8 @@
 import os
 from pdx import Agent
-from pdx.settings import Keys
-
-openai_key = os.environ.get('OPENAI_KEY')
-api_keys = Keys(openai_key=openai_key)
-
 
 agent_folder_path = os.path.dirname(__file__)
-chat_agent = Agent(agent_folder_path, api_keys=api_keys)
+chat_agent = Agent(agent_folder_path)
 
 if __name__ == '__main__':
     # destination input must be in the same format as the .txt file
@@ -28,9 +23,9 @@ if __name__ == '__main__':
                 "destination": content
             },
             "2_user": {
-                "question" : question
-        }
-    })
+                "question": question
+            }
+        })
 
 print(f"User: {question}")
-print(_response.completion)
+print(_response.data)
