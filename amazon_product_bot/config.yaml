@@ -4,7 +4,5 @@ name: amazon_product_agent
 comment: An agent to ask questions about an Amazon product
 model:
     id: text-davinci-003
-    # id: gpt-3.5-turbo
-    # id: claude-v1
 prompt:
     - template: air_fryer_prompt.jinja

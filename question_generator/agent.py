@@ -1,16 +1,15 @@
 import os
 from pdx import Agent
-from pdx.settings import Keys
 
 # Set up the api key using your own API key using the command based on your device
-# for WINDOWS operating system in command prompt terminal and then retrieve key
-openai_key = os.environ.get('OPENAI_KEY')
-api_keys = Keys(openai_key=openai_key)
+# for WINDOWS operating system in command prompt terminal
+# If not setting the key in the environment, you can set it here
+# os.environ["OPENAI_KEY"] = "api-key-for-openai"
 
 # Instantiate the new Agent function in the same folder as the config.yaml file
 # This code snippet finds the directory name of this file.
 agent_folder_path = os.path.dirname(__file__)
-my_agent = Agent(agent_folder_path, api_keys)
+my_agent = Agent(agent_folder_path)
 
 if __name__ == '__main__':
     # Main function that processes user request
@@ -33,4 +32,4 @@ if __name__ == '__main__':
 
     # Prints the topic and the sample test questions generated
     print(f"Topic: {topic}")
-    print(response.completion)
+    print(response.data)
