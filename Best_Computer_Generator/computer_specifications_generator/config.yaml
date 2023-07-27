@@ -1,0 +1,8 @@
+%YAML 1.2
+---
+name: Computer Specifications Generator
+comment: An agent that generates the best computer for the specific job and the reasons that make this the best computer
+model:
+    id: gpt-3.5-turbo
+prompt:
+    - template: product_info.jinja

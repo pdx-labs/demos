@@ -1,0 +1,8 @@
+%YAML 1.2
+---
+name: Job Description Generator
+comment: An agent that generates the computer needs by a specific job
+model:
+    id: gpt-3.5-turbo
+prompt:
+    - template: job_description.jinja
